@@ -1,0 +1,143 @@
+
+#mainContainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+#introSection {
+    margin-bottom: 40px; 
+}
+
+#introSection h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #2c3e50; 
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    color: orange;
+    font-family: 'Kodo Mono' , sans-serif;
+    text-transform: uppercase;
+    font-weight: bold; 
+}
+
+
+#introSection .content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#introSection p {
+    flex: 1 1 60%;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.banner {
+    width: 100%; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .banner img {
+    width: 100%; 
+    height: auto;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-parts {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.about-parts>div {
+    width: 50%;
+}
+
+.pc-parts img {
+    float: left; 
+    margin-right: 30px; 
+    width: 150px; 
+    height: auto; 
+}
+
+
+.pc-parts li {
+    list-style: square;
+}
+
+.pc-parts {
+    font-size: 22px;
+}
+
+.pc-parts::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 576px) {
+    .pc-parts {
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+
+    .pc-parts>div {
+        width: 90%;
+        margin: 0 auto
+    }
+
+}
+
+
+.pc-accessories img {
+    float: left; 
+    margin-right: 30px; 
+    width: 280px; 
+    height: auto; 
+}
+
+
+.pc-accessories li {
+    list-style: square;
+}
+
+.pc-accessories {
+    font-size: 22px;
+}
+
+.pc-accessories::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 576px) {
+    .pc-accessories {
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+
+    .pc-accessories>div {
+        width: 90%;
+        margin: 0 auto
+    }
+
+}

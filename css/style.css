@@ -1,0 +1,122 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: #ffffff; 
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 40%;
+    font-family: 'Kodo Mono' , sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    background-color: #000000;
+    padding: 0 20px;
+    height: 60px; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+span {
+    color: yellow;
+    font-family: 'Kodo Mono' , sans-serif;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+
+.header-right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%; 
+    align-items: stretch; 
+}
+
+.header-right ul li {
+    display: flex;
+    height: 100%; 
+}
+
+
+.header-right ul li:not(:last-child) a:hover {
+    background-color: #6e5959; 
+}
+
+
+
+.header-right ul li a, .signup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    text-decoration: none;
+    height: 100%; 
+    box-sizing: border-box; 
+    border-left: 1px solid #ccc; 
+    border-right: 1px solid #ccc; 
+    color: #ffffff;
+}
+
+
+.header-right ul li:first-child a, .header-right ul li:first-child .signup-button {
+    border-left: none;
+}
+
+
+.header-right ul li:last-child a, .header-right ul li:last-child .signup-button {
+    border-right: none;
+}
+
+
+.signup-button {
+    background-color: #007bff; 
+    color: #ffffff; 
+    cursor: pointer; 
+    border: none; 
+}
+
+.signup-button:hover {
+    background-color: #20446a; 
+    text-decoration: none; 
+}
+
+footer {
+    background-color: #000000; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 16px; 
+    position: relative;
+}
+
+footer a {
+    color: #526fe1; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
