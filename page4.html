@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/test.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-    <title>Project</title>
+    <title>Tutoriel : Comment construire son propre PC</title>
 </head>
 <body>
     <header>
         <div class="header-left">
-            <h1>Pc<span>Build</span></h1>
+            <h1>Cons<span>truction</span></h1>
         </div>
         <nav class="header-right">
             <ul>
@@ -20,14 +22,119 @@
                 <li><a href="page1.html">Page 1</a></li>
                 <li><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
-                <li><a href="page4.html">Page 4</a></li>
-                <li><a href="page5.html">Page 5</a></li>
+                <li><a href="tutoriel.html">Tutoriel</a></li>
+                <li><a href="Forum.html">Forums</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="signup.html" class="signup-button">Sign Up</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div id="sidebar" class="element">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#liste-composants">Liste des composants</a></li>
+                <li><a href="#preparation">Préparation</a></li>
+                <li><a href="#montage">Montage</a></li>
+                <li><a href="#configuration">Configuration logicielle</a></li>
+                <li><a href="#tests">Tests et vérifications</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#ressources">Ressources supplémentaires</a></li>
+            </ul>
+        </div>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Bienvenue dans ce guide complet sur la construction de votre propre PC ! Que vous soyez un passionné de technologie ou un novice curieux, ce tutoriel vous guidera à travers les étapes nécessaires pour assembler un ordinateur fonctionnel, adapté à vos besoins spécifiques.</p>
+
+            <p>Construire son propre PC présente de nombreux avantages. Non seulement cela peut être une expérience enrichissante, mais cela vous permet également d'économiser de l'argent tout en ayant un contrôle total sur les composants que vous choisissez. De plus, en comprenant mieux comment fonctionne un ordinateur, vous serez mieux équipé pour effectuer des mises à niveau ou des réparations à l'avenir.</p>
+
+            <p>Que vous souhaitiez créer une machine de jeu puissante, une station de travail pour le montage vidéo ou simplement un ordinateur de bureau polyvalent, ce guide vous fournira les connaissances et les instructions nécessaires pour réaliser votre projet. Suivez-nous alors que nous explorons les composants nécessaires, les étapes de montage et la configuration logicielle pour transformer un tas de pièces détachées en un PC fonctionnel et performant !</p>
+        </section>
+        <section id="liste-composants">
+            <h2>Liste des composants</h2>
+            <ul>
+                <li>Processeur</li>
+                <li>Carte mère</li>
+                <li>RAM</li>
+                <li>Carte graphique</li>
+                <li>Disque dur ou SSD</li>
+                <li>Alimentation</li>
+                <li>Boîtier</li>
+                <li>Écran, clavier, souris (en option)</li>
+            </ul>
+        </section>
+        <section  id="preparation">
+            <h2>Préparation</h2>
+            <p>Avant de commencer le montage de votre PC, il est important de vous assurer d'avoir tout le matériel et les outils nécessaires, ainsi que de préparer votre espace de travail. Voici ce dont vous aurez besoin :</p>
+            <ul>
+                <li>Les composants de votre PC</li>
+                <li>Tournevis adaptés aux vis de votre boîtier et de vos composants</li>
+                <li>Tapis antistatique ou bracelet antistatique pour éviter tout dommage électrostatique aux composants</li>
+                <li>Un espace de travail propre et dégagé pour assembler les composants</li>
+                <li>Un manuel de la carte mère pour vous aider à identifier les ports et les connecteurs</li>
+                <li>Une source de lumière adéquate pour bien voir ce que vous faites</li>
+            </ul>
+            <p>Assurez-vous de suivre toutes les instructions fournies avec vos composants, en particulier celles concernant les précautions antistatiques. Une fois que vous avez rassemblé tout ce dont vous avez besoin, vous êtes prêt à commencer le montage de votre PC.</p>
+        </section>
+        <section id="montage">
+            <h2>Montage</h2>
+            <p>Le montage de votre PC implique d'installer les composants dans le boîtier de manière sécurisée et correcte. Voici les étapes générales que vous suivrez :</p>
+            <ol>
+                <li>Préparez le boîtier en retirant les panneaux latéraux et en vous assurant qu'il est propre à l'intérieur.</li>
+                <li>Installez la carte mère en alignant les trous de montage avec les entretoises du boîtier et en fixant la carte mère avec des vis.</li>
+                <li>Installez le processeur en soulevant le levier du socket, en insérant le processeur dans le bon sens, puis en abaissant le levier pour le verrouiller en place.</li>
+                <li>Installez la RAM en ouvrant les clips des slots DIMM, en insérant les barrettes de RAM dans les slots correspondants et en appuyant fermement jusqu'à ce que les clips se referment.</li>
+                <li>Installez la carte graphique en retirant les caches d'extension, en alignant la carte avec le slot PCIe x16 et en appuyant fermement jusqu'à ce qu'elle soit bien en place.</li>
+                <li>Installez le disque dur ou SSD en fixant le disque dans le rack prévu à cet effet, puis en le connectant à la carte mère avec un câble SATA.</li>
+                <li>Connectez l'alimentation à la carte mère, à la carte graphique, au disque dur ou SSD et aux autres composants nécessitant une alimentation électrique.</li>
+                <li>Connectez les câbles de données (SATA, USB, etc.) des composants à la carte mère.</li>
+                <li>Refermez le boîtier en remettant les panneaux latéraux en place et en fixant les vis.</li>
+            </ol>
+            <p>Assurez-vous de suivre attentivement les instructions fournies avec vos composants, car les détails du montage peuvent varier en fonction des modèles. Une fois le montage terminé, vous pouvez passer à l'installation du système d'exploitation et à la configuration de votre PC.</p>
+        </section>
+        <section id="configuration">
+            <h2>Configuration logicielle</h2>
+            <p>Une fois que vous avez assemblé votre PC, vous devez maintenant configurer le logiciel pour le rendre pleinement fonctionnel. Voici les étapes à suivre :</p>
+            <ol>
+                <li><strong>Installation du système d'exploitation :</strong> Insérez le disque d'installation de votre système d'exploitation (Windows, Linux, etc.) et suivez les instructions à l'écran pour l'installer.</li>
+                <li><strong>Installation des pilotes :</strong> Utilisez le CD fourni avec votre carte mère pour installer les pilotes nécessaires. Vous pouvez également télécharger les derniers pilotes depuis le site web du fabricant.</li>
+                <li><strong>Mise à jour du système :</strong> Une fois le système d'exploitation installé, assurez-vous de le mettre à jour avec les dernières mises à jour de sécurité et de fonctionnalités.</li>
+                <li><strong>Installation des applications :</strong> Installez les applications que vous souhaitez utiliser, telles que des navigateurs web, des suites bureautiques, etc.</li>
+                <li><strong>Configuration des paramètres :</strong> Personnalisez les paramètres de votre système d'exploitation et des applications selon vos préférences.</li>
+            </ol>
+            <p>Une fois que vous avez terminé la configuration logicielle, votre PC est prêt à être utilisé !</p>
+        </section>
+        <section id="tests">
+            <h2>Tests et vérifications</h2>
+            <p>Avant de commencer à utiliser votre nouveau PC, il est important de réaliser quelques tests pour vous assurer que tout fonctionne correctement :</p>
+            <ol>
+                <li><strong>Démarrage du système :</strong> Allumez votre PC et assurez-vous qu'il démarre correctement sans erreurs.</li>
+                <li><strong>Vérification du BIOS/UEFI :</strong> Accédez au BIOS/UEFI de votre carte mère pour vérifier les paramètres et assurez-vous que tout est correctement configuré.</li>
+                <li><strong>Test de la mémoire (RAM) :</strong> Utilisez un logiciel de test de mémoire pour vérifier que la RAM fonctionne correctement.</li>
+                <li><strong>Test du disque dur/SSD :</strong> Vérifiez que le disque dur ou le SSD est détecté et fonctionne correctement.</li>
+                <li><strong>Test de stress :</strong> Utilisez un logiciel de test de stress pour mettre votre système à l'épreuve et vérifier sa stabilité.</li>
+            </ol>
+            <p>Si vous rencontrez des problèmes lors de ces tests, consultez le manuel de votre carte mère ou les ressources en ligne pour obtenir de l'aide sur la résolution des problèmes.</p>
+        </section>
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Félicitations, vous avez maintenant réussi à construire votre propre PC ! En suivant ce guide étape par étape, vous avez appris comment choisir les composants, les assembler et les configurer pour créer un ordinateur fonctionnel et adapté à vos besoins.</p>
+            <p>Construire son propre PC peut être une expérience enrichissante qui vous permet de mieux comprendre le fonctionnement interne d'un ordinateur et de personnaliser votre configuration selon vos préférences. De plus, cela peut vous faire économiser de l'argent par rapport à l'achat d'un PC pré-assemblé.</p>
+            <p>N'oubliez pas d'effectuer des sauvegardes régulières de vos données et de maintenir votre PC en bon état en nettoyant régulièrement la poussière et en effectuant des mises à jour logicielles. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter les forums en ligne ou à demander de l'aide à des professionnels.</p>
+            <p>Nous espérons que ce tutoriel vous a été utile et que vous apprécierez votre nouveau PC fait maison !</p>
+        </section>
+        <section id="ressources">
+            <h2>Ressources supplémentaires</h2>
+            <p>Voici quelques ressources supplémentaires pour vous aider à approfondir vos connaissances sur la construction de PC :</p>
+            <ul>
+                <li><strong>Forums en ligne :</strong> Rejoignez des forums de passionnés de matériel informatique pour poser des questions et obtenir des conseils d'experts.</li>
+                <li><strong>Vidéos YouTube :</strong> Regardez des tutoriels vidéo pour visualiser les étapes de construction d'un PC.</li>
+                <li><strong>Manuels des composants :</strong> Consultez les manuels des composants pour obtenir des informations spécifiques sur l'installation et la configuration.</li>
+                <li><strong>Magasins spécialisés :</strong> Rendez-vous dans des magasins spécialisés en informatique pour obtenir des conseils personnalisés.</li>
+            </ul>
+            <p>En utilisant ces ressources, vous pourrez approfondir vos connaissances et devenir un expert en construction de PC !</p>
+        </section>
+    </main>
     <footer>
         <p>Created in 2024 © Jergi Makhoul, Yacine Ourabah , Person 3</p>
         <p>Find us on <a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a></p>
