@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <title>Forums</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Pc<span>Build</span></h1>
+        </div>
+        <nav class="header-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">Page 1</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="page3.html">Page 3</a></li>
+                <li><a href="tutoriel.html">Tutoriel</a></li>
+                <li><a href="Forum.html">Forums</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="signup.html" class="signup-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Forums</h2>
+        <div class="block searchField">
+<form class="clearfix" action="/forums/search/" method="GET">
+<div class="input__wrapper col xs-col-10 sm-col-11 xs-pr2">
+    <input type="text" class="text-input xs-col-12" name="q" value placeholder="Forum Search...">
+    <button type="submit">Submit</button>
+</div>
+<section></section>
+</form>
+</div>
+
+<section>
+    <form action="/submit-post" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="subject">Sujet :</label>
+        <select id="subject" name="subject">
+            <option value="system">System</option>
+            <option value="hardware">Hardware</option>
+            <option value="software">Software</option>
+            <option value="General">General</option>
+        </select>
+        <br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<section>
+    <h2>Recent Posts</h2>
+    <ul>
+        <li>
+            <strong>Username:</strong> JohnDoe<br>
+            <strong>Subject:</strong> System<br>
+            <strong>Message:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            <a href="#replyForm">Répondre</a>
+        </li>
+        <li>
+            <strong>Username:</strong> JaneSmith<br>
+            <strong>Subject:</strong> Hardware<br>
+            <strong>Message:</strong> Nulla facilisi. Donec ut libero sed arcu vehicula ultricies a non tortor. <br>
+            <a href="#replyForm">Répondre</a>
+        </li>
+        <!-- Add more posts here -->
+    </ul>
+</section>
+<section id="system">
+    <h2>System</h2>
+    <ul>
+        <li>
+            <strong>JohnDoe:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            <a href="#replyForm">Répondre</a>
+        </li>
+        <li>
+            <strong>JohnJohn</strong> message message message message message message message. <br>
+            <a href="#replyForm">Répondre</a>
+        </li>
+    </ul>
+    <!-- Insert builds discussions here -->
+</section>
+<section id="hardware">
+    <h2>Hardware</h2>
+    <ul>
+        <li>
+            <strong>JaneSmith:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            <a href="#replyForm">Répondre</a>
+        </li>
+        <li>
+            <strong>Serigne</strong> message message message message message message message. <br>
+            <a href="#replyForm">Répondre</a>
+        </li>
+    </ul>
+    <!-- Insert general discussion threads here -->
+</section>
+<section id="software">
+    <h2>Software</h2>
+    <!-- Insert general discussion threads here -->
+</section>
+<section id="general">
+    <h2>General</h2>
+    <!-- Insert general discussion threads here -->
+</section>
+<label for="replyToggle">Répondre au message</label>
+<input type="checkbox" id="replyToggle">
+
+<div id="replyForm">
+    <h2>Répondre au message</h2>
+    <form action="/submit-reply" method="post">
+        <label for="username">Nom d'utilisateur (facultatif) :</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="reply">Réponse :</label><br>
+        <textarea id="reply" name="reply" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+    </main>
+    <footer>
+        <p>Created in 2024 © Jergi Makhoul, Yacine Ourabah , Person 3</p>
+        <p>Find us on <a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>
