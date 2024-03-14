@@ -22,7 +22,7 @@
 }
 
 
-/*l'animation de slide */
+/*animation de slide */
 @keyframes slideAnimation {
     0% {
         right: 100%; 
