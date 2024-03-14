@@ -1,0 +1,71 @@
+
+/* l'animation de rotation */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ajoute la classe (rotateimage) au fichier html 
+<img class="rotate-image" src="image/pcpartbanner.jpg" alt="Banner Image">*/
+
+.banner img.rotate-image {
+    width: 100%; 
+    height: auto;
+    animation: rotateAnimation 5s infinite linear; 
+}
+
+
+/*l'animation de slide */
+@keyframes slideAnimation {
+    0% {
+        right: 100%; 
+    }
+    100% {
+        right: 0%; 
+    }
+}
+
+/* ajoute la classe (slide-animation) au fichier html 
+<img class="slide-animation" src="image/pcaccessories.jpg" alt="Plante en pot">*/
+
+.pc-accessories {
+    position: relative; 
+    overflow: hidden; 
+}
+
+.pc-accessories img {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    right: 100%;
+    width: 280px;
+    height: auto;
+    animation: slideAnimation 5s infinite linear;
+}
+
+/*l'animation de fondu */
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ajoute la classe (fade-animation) au fichier html 
+<img class="fade-animation" src="image/pcpart.jpg" alt="Plante en pot">*/
+.pc-parts img {
+    float: left; 
+    margin-right: 30px; 
+    width: 150px; 
+    height: auto; 
+    animation: fadeAnimation 4s infinite alternate; 
+}
