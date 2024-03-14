@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/forum.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-    <title>Forums</title>
+    <title>Project</title>
 </head>
 <body>
     <header>
@@ -22,7 +22,7 @@
                 <li><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
                 <li><a href="tutoriel.html">Tutoriel</a></li>
-                <li><a href="Forum.html">Forums</a></li>
+                <li><a href="forum.html"> Forum</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="signup.html" class="signup-button">Sign Up</a></li>
             </ul>
@@ -34,7 +34,7 @@
 <form class="clearfix" action="/forums/search/" method="GET">
 <div class="input__wrapper col xs-col-10 sm-col-11 xs-pr2">
     <input type="text" class="text-input xs-col-12" name="q" value placeholder="Forum Search...">
-    <button type="submit">Submit</button>
+    <button type="submit">Search</button>
 </div>
 <section></section>
 </form>
@@ -44,7 +44,7 @@
     <form action="/submit-post" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
-        <label for="subject">Sujet :</label>
+        <label for="subject">Subject :</label>
         <select id="subject" name="subject">
             <option value="system">System</option>
             <option value="hardware">Hardware</option>
@@ -72,7 +72,6 @@
             <strong>Message:</strong> Nulla facilisi. Donec ut libero sed arcu vehicula ultricies a non tortor. <br>
             <a href="#replyForm">Répondre</a>
         </li>
-        <!-- Add more posts here -->
     </ul>
 </section>
 <section id="system">
@@ -87,7 +86,6 @@
             <a href="#replyForm">Répondre</a>
         </li>
     </ul>
-    <!-- Insert builds discussions here -->
 </section>
 <section id="hardware">
     <h2>Hardware</h2>
@@ -101,33 +99,31 @@
             <a href="#replyForm">Répondre</a>
         </li>
     </ul>
-    <!-- Insert general discussion threads here -->
 </section>
 <section id="software">
     <h2>Software</h2>
-    <!-- Insert general discussion threads here -->
+    <a href="#replyForm">Répondre</a>
 </section>
 <section id="general">
     <h2>General</h2>
-    <!-- Insert general discussion threads here -->
+    <a href="#replyForm">Répondre</a>
 </section>
-<label for="replyToggle">Répondre au message</label>
-<input type="checkbox" id="replyToggle">
 
 <div id="replyForm">
-    <h2>Répondre au message</h2>
+    <h2>Reply</h2>
     <form action="/submit-reply" method="post">
-        <label for="username">Nom d'utilisateur (facultatif) :</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="reply">Réponse :</label><br>
+        <label for="username">Username :</label><br>
+        <input type="text" id="username2" name="username"><br>
+        <label for="reply">Response :</label><br>
         <textarea id="reply" name="reply" rows="4" cols="50" required></textarea><br>
-        <button type="submit">Envoyer</button>
+        <button type="submit">Send</button>
     </form>
 </div>
     </main>
     <footer>
-        <p>Created in 2024 © Jergi Makhoul, Yacine Ourabah , Person 3</p>
-        <p>Find us on <a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a></p>
+        <p>Created in 2024 © Jergi Makhoul, Yacine Ourabah , Serigne Mbacke Deme, Adnane Boudane</p>
+        <p>Find us on <a href="https://github.com/Sreemer1/ProjetWeb" target="_blank">GitHub</a></p>
     </footer>
 </body>
 </html>
+
