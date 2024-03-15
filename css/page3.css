@@ -1,0 +1,56 @@
+.main {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding-top: 50px;
+    overflow: hidden; 
+}
+.main-title {
+    text-align: center; 
+    font-size: 32px; 
+    color: #333;
+    margin: 0 auto; 
+    padding-top: 40px ;
+}
+.accessory {
+    width: calc(70% - 20px); 
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 15%;
+    overflow: hidden; 
+}
+
+.accessory img {
+    width: 150px; 
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.accessory h2 {
+    font-size: 20px; 
+    color: #333;
+    margin-top: 0;
+}
+
+.accessory p {
+    font-size: 16px; 
+    color: #666;
+    margin-top: 0;
+    text-align:left;
+}
+
+
+.accessory:nth-child(odd) img {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.accessory:nth-child(odd) h2 {
+    text-align: right;
+}
+
+.accessory:nth-child(odd) p {
+    text-align: right;
+}
