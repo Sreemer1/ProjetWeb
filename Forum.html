@@ -29,6 +29,7 @@
         </nav>
     </header>
     <main>
+        <script src="js/forumScript.js"></script>
         <h2>Forums</h2>
         <div class="block searchField">
 <form class="clearfix" action="/forums/search/" method="GET">
@@ -119,6 +120,61 @@
         <button type="submit">Send</button>
     </form>
 </div>
+
+<div class="quiz-container">
+    <h1>Mini Quiz Technique</h1>
+    <p id="question"></p>
+    <div id="options"></div>
+</div>
+
+<script>
+    const quizQuestions = [
+        {
+            question: "Quelle est la fonction principale de la RAM dans un PC?",
+            options: ["Stockage permanent", "Traitement des graphiques", "Mémoire temporaire", "Alimentation"],
+            answer: "Mémoire temporaire"
+        },
+        {
+            question: "Quel est le rôle d'un processeur dans un ordinateur?",
+            options: ["Stocker des données", "Exécuter des programmes", "Alimenter les composants", "Connecter à Internet"],
+            answer: "Exécuter des programmes"
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+
+    function displayQuestion() {
+        const questionObj = quizQuestions[currentQuestionIndex];
+        document.getElementById('question').textContent = questionObj.question;
+        const optionsContainer = document.getElementById('options');
+        optionsContainer.innerHTML = '';
+        questionObj.options.forEach(option => {
+            const button = document.createElement('button');
+            button.textContent = option;
+            button.onclick = function() { checkAnswer(option); };
+            optionsContainer.appendChild(button);
+        });
+    }
+
+    function checkAnswer(selectedOption) {
+        const correctAnswer = quizQuestions[currentQuestionIndex].answer;
+        if (selectedOption === correctAnswer) {
+            alert('Correct!');
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizQuestions.length) {
+                displayQuestion();
+            } else {
+                alert('Quiz terminé !');
+                currentQuestionIndex = 0; // Reset quiz
+                displayQuestion();
+            }
+        } else {
+            alert('Faux ! La réponse correcte était : ' + correctAnswer);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', displayQuestion);
+</script>
     </main>
     <footer>
         <p>Created in 2024 © Jergi Makhoul, Yacine Ourabah , Serigne Mbacke Deme, Adnane Boudane</p>
