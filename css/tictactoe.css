@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header, footer {
+    flex-shrink: 0; /* evite les header et footer de skrink*/
+    width: 100%;
+}
+
+main {
+    flex-grow: 1; /*prendre lespace disponible au complet*/
+    display: flex;
+    justify-content: center;
+    align-items: center; /*centre le tout */
+}
+
+#gameContainer {
+    width: 90%; 
+    max-width: 600px; /* max width */
+    max-height: calc(100vh - 120px); /* ajute en fonction de header et du footer*/
+    overflow: auto; /*rajoute un scroll si jamais lecran est trop petite pour contineur a jouer */
+    padding: 20px;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* divise en fraction les carres */
+    gap: 5px; 
+    width: 90vw; 
+    max-width: 500px;
+    aspect-ratio: 1; /* assure le que ltout reste un carre */
+}
+
+.cell {
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw; 
+    aspect-ratio: 1; 
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.cell.x::before {
+    content: 'X'; 
+    color: darkblue; 
+}
+
+.cell.circle::before {
+    content: 'O'; 
+    color: darkred; 
+}
+
+@media (max-width: 600px) {
+    #gameContainer {
+        width: 100%;
+        max-height: calc(100vh - 100px); /* ajuuste pour plus petit ecran*/
+    }
+}
+
+
