@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Pc<span>Build</span></h1>
+        </div>
+        <nav class="header-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pcparts.html">Pc Parts</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="accessoires.html">Accessoires</a></li>
+                <li><a href="tutoriel.html">Tutoriel</a></li>
+                <li><a href="forum.html"> Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="tictactoe.html">Tic-tac-toe</a></li>
+                <li><a href="jeux2.html">Devinette</a></li>
+                <li><a href="signup.html" class="signup-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Jeu de devinettes</h1>
+        <p>Devinez le nombre entre 1 et 100</p>
+        <input type="number" id="guessInput" placeholder="Entrez un nombre ici">
+        <button onclick="checkGuess()">Deviner</button>
+        <p id="output"></p>
+
+        <script src="js/jeux2.js"></script>
+    </main>
+</body>
+</html>
