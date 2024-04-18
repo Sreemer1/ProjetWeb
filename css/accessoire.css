@@ -4,6 +4,7 @@
     padding-top: 50px;
     overflow: hidden; 
 }
+
 .main-title {
     text-align: center; 
     font-size: 32px; 
@@ -11,12 +12,19 @@
     margin: 0 auto; 
     padding-top: 40px ;
 }
+
 .accessory {
     width: calc(70% - 20px); 
     margin-bottom: 40px;
     padding-top: 40px;
     padding-left: 15%;
     overflow: hidden; 
+}
+
+.accessory span {
+    font-weight: bold;
+    color: #f10f0f;
+    font-family: 'Courier New', Courier, monospace; /* Donne un effet de machine à écrire */
 }
 
 .accessory img {
@@ -27,10 +35,17 @@
     border-radius: 5px;
 }
 
+.accessory img.enlarged {
+    transform: scale(1.2); /* Agrandit l'image de 20% */
+    transition: transform 0.3s ease-in-out; /* Rend l'agrandissement plus fluide */
+}
+
 .accessory h2 {
     font-size: 20px; 
     color: #333;
     margin-top: 0;
+    opacity: 0; /* Ajout de l'opacité à 0 pour initier l'animation */
+    transition: opacity 2s; /* Ajout de la transition d'opacité pour l'animation */
 }
 
 .accessory p {
@@ -39,7 +54,6 @@
     margin-top: 0;
     text-align:left;
 }
-
 
 .accessory:nth-child(odd) img {
     float: right;
